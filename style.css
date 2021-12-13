@@ -1,15 +1,72 @@
-body {
-  background-color: powderblue;
+/* Add some padding on document's body to prevent the content
+   from going underneath the header and footer */
+body{
+  padding-top: 90px;
+  padding-bottom: 40px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  background-color: #FFF8DC;
+  margin: 0 auto;
+  text-align: left;
 }
 
-h1 {
-  color: blue;
-  text-align: center;
-  font-family: 'Inter', sans-serif;
+/* Header Properties */
+.fixed-header{
+  top: 0;
+  width: 80%;
+  position: fixed;
+  z-index: 1000;
+  background: linear-gradient(black, transparent);
+  height: 85px;
+  font-family: "Marcellus SC", serif;
+  font-size: 24pt;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
 }
 
-p {
-  color: red;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
+/*navigation bar*/
+.fixed-header nav {
+  font-size: 20px;
+  margin-left: auto;
+  background-color: inherit;
+  font-size: 16pt;
+}
+
+.fixed-header nav a {
+  text-decoration: none;
+  color: white;
+  padding: 0 1em;
+  transition: 0.5s;
+}
+
+.fixed-header nav a:hover {
+  color: #4682B4;
+}
+
+a {
+  text-decoration: underline;
+  color: black;
+}
+
+
+#content {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0em 1em;
+  background-color: #FFFACD;
+  font-family: "Marcellus SC", serif;
+  color: black;
+  font-family: serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+#content p {
+  margin: 0 0 1em 0;
+  line-height: 1.5;
 }
