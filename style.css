@@ -1,48 +1,74 @@
 /* Add some padding on document's body to prevent the content
    from going underneath the header and footer */
 body{
-  padding-top: 90px;
-  padding-bottom: 40px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  background-color: #FFF8DC;
   margin: 0 auto;
   text-align: left;
+  background-color: #FFF8DC;
 }
+
 
 /* Header Properties */
 .fixed-header{
-  top: 0;
-  width: 80%;
+  top: 0px;
+  width: 94%;
   position: fixed;
   z-index: 1000;
-  background: linear-gradient(black, transparent);
-  height: 85px;
-  font-family: "Marcellus SC", serif;
-  font-size: 24pt;
+  background-image: linear-gradient(#000000, #00000099);
+  font-size: 24px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
   color: white;
   display: flex;
-  align-items: center;
-  padding: 0 10%;
+  justify-content: flex-start;
+  padding: 5px 3% 5px 3%;
+  text-align: center;
+  line-height: 100%;
 }
-
 /*navigation bar*/
 .fixed-header nav {
-  font-size: 20px;
+  display: flex;
+  opacity: 1;
   margin-left: auto;
-  background-color: inherit;
-  font-size: 16pt;
+  justify-content: flex-start;
 }
-
 .fixed-header nav a {
-  text-decoration: none;
+  filter: drop-shadow(0 0 0.75rem black);
   color: white;
-  padding: 0 1em;
+  opacity: 1;
+  padding: 0 0.5em;
+  text-decoration: none;
+  font-variant: small-caps;
+
+}
+.fixed-header nav a:hover {
+  color: red;
   transition: 0.5s;
 }
 
-.fixed-header nav a:hover {
-  color: #4682B4;
+
+
+/*front matter is the big blocky image*/
+#frontmatter {
+  text-align: center;
+  background-image: url("res/helmet.jpg");
+  background-position: bottom 950px right 100%;
+  height: 300px;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 24px;
 }
+#frontmatter h1 {
+  font-size: 144px;
+  filter: drop-shadow(0 0 0.5rem black);
+  margin: 0;
+}
+
+
 
 a {
   text-decoration: underline;
@@ -52,21 +78,44 @@ a {
 
 #content {
   position: relative;
-  width: 50%;
+  width: 800px;
+  font-size: 18px;
   margin: 0 auto;
   padding: 0em 1em;
-  background-color: #FFFACD;
-  font-family: "Marcellus SC", serif;
+  background-color: #FFF8DC;
   color: black;
-  font-family: serif;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
 
-
 #content p {
   margin: 0 0 1em 0;
   line-height: 1.5;
+}
+
+#content ul {
+  margin: -0.5em 0 0.5em 0;
+}
+
+
+.slidecontainer {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+
+app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: verdana;
 }
