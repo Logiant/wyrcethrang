@@ -54,20 +54,29 @@ body{
   text-align: center;
   background-image: url("res/helmet.jpg");
   background-position: bottom 950px right 100%;
-  height: 300px;
+  height: 400px;
   width: 100%;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-bottom: 24px;
 }
 #frontmatter h1 {
-  font-size: 144px;
+  font-size: 60px;
+  width: 800px;
   filter: drop-shadow(0 0 0.5rem black);
   margin: 0;
 }
-
+#frontmatter a {
+  background-image: linear-gradient(to right, #918559 , #696040);
+  text-decoration: none;
+  color: white;
+  margin-top: 5em;
+  padding: 0.5em 1em;
+  font-size: 20px;
+}
 
 
 a {
@@ -87,35 +96,25 @@ a {
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-
-
-#content p {
-  margin: 0 0 1em 0;
   line-height: 1.5;
-}
-
-#content ul {
-  margin: -0.5em 0 0.5em 0;
+  text-align: justify;
 }
 
 
-.slidecontainer {
-  display:flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: 1.25em;
-  font-weight: bold;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-}
-
-
-app {
+.hgroup{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: verdana;
+  flex-direction: row;
+}
+
+.hgroup img{
+  padding: 1em;
+  width: 100%;
+  border-radius: 20%;
+}
+
+#content h1 {
+  width: 100%;
+  text-align: center;
+  background-color: #696040;
+  color: white;
 }
