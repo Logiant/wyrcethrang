@@ -120,33 +120,33 @@ a {
 }
 
 
-
-.cardHolder {
-  display: grid;
-  grid-auto-columns: 100%;
-  grid-auto-flow: column;
-  grid-template-columns: repeat(auto-fill, 50%);
-  grid-auto-flow: row;
+h2 {
+  text-align: left;
+  color: white;
 }
+
+
+/*
 
 .mediaCard {
   display: grid;
   grid-auto-flow: row;
   background-color: #DFD8CC;
+  height: 20rem;
 }
 
 .mediaCard > a {
   text-decoration: none;
 }
 
-.mediaCard > * > img {
+.mediaCard > img {
   inline-size: 100%;
   height: 20rem;
   object-fit: cover;
 }
 
 
-.mediaCard > * > .title {
+.mediaCard > .title {
   font-size: 30px;
   padding: 0px;
   margin: 0px;
@@ -162,3 +162,5 @@ a {
 .mediaCard > * > .subtitle {
   text-align: center;
 }
+
+*/
