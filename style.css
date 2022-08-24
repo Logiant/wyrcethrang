@@ -16,12 +16,11 @@ body{
   z-index: 1000;
   background-image: linear-gradient(#000000, #00000099);
   font-size: 24px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
+  height: 50px;
   color: white;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   padding: 5px 3% 5px 3%;
   text-align: center;
   line-height: 100%;
@@ -32,6 +31,7 @@ body{
   opacity: 1;
   margin-left: auto;
   justify-content: flex-start;
+  align-items: center;
 }
 .fixed-header nav a {
   filter: drop-shadow(0 0 0.75rem black);
@@ -101,17 +101,6 @@ a {
 }
 
 
-.hgroup{
-  display: grid;
-  grid-auto-flow: column;
-}
-
-.hgroup img{
-  width: 90%;
-  padding: 0 5%;
-  border-radius: 10%;
-}
-
 #content h1 {
   width: 100%;
   text-align: center;
@@ -124,43 +113,3 @@ h2 {
   text-align: left;
   color: white;
 }
-
-
-/*
-
-.mediaCard {
-  display: grid;
-  grid-auto-flow: row;
-  background-color: #DFD8CC;
-  height: 20rem;
-}
-
-.mediaCard > a {
-  text-decoration: none;
-}
-
-.mediaCard > img {
-  inline-size: 100%;
-  height: 20rem;
-  object-fit: cover;
-}
-
-
-.mediaCard > .title {
-  font-size: 30px;
-  padding: 0px;
-  margin: 0px;
-  color: white;
-  text-align: center;
-  font-weight: bolder;
-  text-shadow: -1px 1px  2px #000,
-                1px 1px  2px #000,
-                1px -1px 2px #000,
-               -1px -1px 2px #000;
-}
-
-.mediaCard > * > .subtitle {
-  text-align: center;
-}
-
-*/
