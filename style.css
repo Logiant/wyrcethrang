@@ -1,3 +1,12 @@
+/* aclonica-regular - latin */
+@font-face {
+  font-family: 'Aclonica';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Aclonica.ttf');
+}
+
+
 /* Add some padding on document's body to prevent the content
    from going underneath the header and footer */
 body{
@@ -25,6 +34,7 @@ body{
   text-align: center;
   line-height: 100%;
 }
+
 /*navigation bar*/
 .fixed-header nav {
   display: flex;
@@ -32,6 +42,7 @@ body{
   margin-left: auto;
   justify-content: flex-start;
   align-items: center;
+  font-family: "Aclonica", times, sans-serif;
 }
 .fixed-header nav a {
   filter: drop-shadow(0 0 0.75rem black);
@@ -62,6 +73,7 @@ body{
   justify-content: center;
   align-items: center;
   margin-bottom: 24px;
+  font-family: "Aclonica", times, sans-serif;
 }
 #frontmatter h1 {
   font-size: 60px;
@@ -106,10 +118,12 @@ a {
   text-align: center;
   background-color: #696040;
   color: white;
+  font-family: "Aclonica", times, sans-serif;
 }
 
 
 h2 {
   text-align: left;
   color: white;
+  font-family: "Aclonica", times, sans-serif;
 }
