@@ -1,0 +1,199 @@
+/* aclonica-regular - latin */
+@font-face {
+  font-family: 'Aclonica';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Aclonica.ttf');
+}
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   20% { transform: rotate(5deg); }
+   60% { transform: rotate(-5deg); }
+   80% { transform: rotate(5deg); }
+   100% { transform: rotate(0deg); }
+}
+
+
+:root {
+  --header: #222;
+  --footer: #222;
+  --background: #333;
+  --text: #fff;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+/* Sticky header styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--header);
+  padding: 10px 0;
+  z-index: 1;
+  display: flex;
+  padding: 0.5em 4em;
+}
+
+.header .logo {
+  flex: auto;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0 auto;
+}
+.header .navigation {
+  display: flex;
+  justify-content: flex-end;
+}
+.header .navigation a {
+  color: white;
+  text-decoration: none;
+  margin: auto 10px;
+}
+
+/*Hero image info*/
+.hero {
+  margin: 30px 0;
+}
+.hero img {
+  width: 100%;
+}
+.hero h1 {
+  color: var(--text-color);
+  position: absolute;
+  bottom: 20rem;
+  left: 0;
+  right: 0;
+  text-shadow: -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, 1px 1px 2px #000;
+}
+.hero a {
+  font-size: 2em;
+  text-decoration: none;
+  color: var(--text);
+  background-color: #003E78;
+  border-radius: 16px;
+  position: absolute;
+  bottom: 35rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+  width: 10em;
+  transition: 0.5s ease;
+  transition-property: box-shadow;
+  animation: none;
+  outline: 1px black solid;
+}
+
+
+.hero a:hover {
+    box-shadow: 0px 0px 40px 20px #003E78;
+    animation: wiggle 2.5s infinite;
+}
+
+/*Main container for the site*/
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+h1 {
+  font-family: "Aclonica", times, sans-serif;
+  font-size: 3em;
+  margin: 30px 0;
+  text-align: center;
+  color: var(--text);
+}
+p {
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+/*Screenshot bar with images and captions*/
+.screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.screenshot {
+  position: relative;
+  flex: 0 0 30%;
+  margin: 20px 0;
+  overflow: hidden;
+}
+.screenshot img {
+  width: 100%;
+  transition: 0.5s ease;
+}
+.screenshot:hover img {
+  transform: scale(1.2);
+}
+.screenshot .caption {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  color: white;
+  transition: 0.5s ease;
+  text-align: center;
+  transition-property: visibility, opacity;
+}
+.screenshot:hover .caption {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*Social media link behavior*/
+.social {
+  margin: 10px auto;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+}
+.social a {
+  text-decoration: none;
+  align-self: center;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+.social img{
+  width: 100%;
+  grid-row: auto;
+}
+
+
+
+
+/* Footer styles */
+.footer {
+  margin: 0px;
+  padding: 15px;
+  background-color: var(--footer);
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+.footer a {
+  color: var(--text);
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .copyright {
+  flex: 0 0 auto;
+}
